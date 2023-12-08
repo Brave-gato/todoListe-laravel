@@ -10,6 +10,14 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     <h1>Liste des tâches</h1>
+                    <form>
+                        <label for="task">Tâche:</label><br>
+                        <input type="text" id="task" name="task"><br>
+                        <label for="ltask">Description:</label><br>
+                        <input type="text" id="ltask" name="ltask">
+                        <button type="button">Ajouter</button> 
+                        </form> 
+
                     <ul>
                         @foreach ($tasks as $task)
                             <li>{{ $task->name }}</li>
